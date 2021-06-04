@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Petite Treats Bakery</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="favicon.ico"  type="image/x-icon">
+    <script src="form.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- Logo -->
+    <div id="header-container">
+      <div id="logo">
+          <img src="images/logo.png"  alt="Petite Treat Bakery Logo - Made by Me" width="200" height="200">
+      </div>
+    <!-- Site navigation menu -->
+    <div id="nav">
+      <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="specials.html">Current Specials</a></li>
+          <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+    <!-- Main content -->
+    <div class="Intro">
+      <h1>Petite Treats Subscription SignUp!</h1>
+      <p>Sign up now and get a free donut with your first online order!</p>
+      <div class="top">
+        <p>* Denotes Mandatory Element to fill</p>
+      </div>
+    <form name="WebForm" action="subscription.php" onsubmit="return validateForm()" method="post">
+      <div class="name_input">
+        <label for="fname">Name*:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Full Name">
+        <br>
+        <br>
+        <label for="Email">Email*:</label><br>
+        <input type="text" id="Email" name="Email" placeholder="Email">
+        <br>
+        <br>
+        <label for="birth_month">When is your birth month?*:</label><br>
+        <input type="text" id="birth_month" name="birth_month" placeholder=" Jan-Dec">
+        <br>
+        <br>
+        <label for="birth_day">When is your birthday?*:</label><br>
+        <input type="text" id="birth_day" name="birth_day" placeholder="Number between 1-31">
+      </div>
+      <br>
+      <br>
+        <div class="interest">
+          <label for="interest">Select Products of Interest*:</label>
+          <br>
+
+            <input type="checkbox" id="AppleCake" name="AppleCake" value=" AppleCake ">
+            <label for="AppleCake"> AppleCake</label><br>
+            <input type="checkbox" id="custardslice" name="custardslice" value="Custardslice ">
+            <label for="custardslice"> Custardslice</label><br>
+            <input type="checkbox" id="Donuts" name="Donuts" value=" Donuts ">
+            <label for="Donuts"> Donuts</label><br>
+            <input type="checkbox" id="eggtart" name="eggtart" value=" eggtart ">
+            <label for="eggtart"> EggTart</label><br>
+            <input type="checkbox" id="Fruittart" name="Fruittart" value=" Fruittart ">
+            <label for="Fruittart"> Fruittart</label><br>
+            <input type="checkbox" id="RasberryCheese" name="RasberryCheese" value=" RasberryCheese ">
+            <label for="RasberryCheese"> RasberryCheese</label><br>
+
+        </div>
+
+        <br>
+        <div class="Approval">
+          <p> Do you want to be added to Petite Treats' Mailing List? </p>
+          <input type="radio" id="Yes" name="yes-no" value="yes">
+          <label for="yes">Yes</label><br>
+        </div>
+        <br>
+      <p>By submitting this form you agree to our Terms of Service </p>
+      <button type="submit"  class="registerbtn" value="Submit" >Submit</button>
+      <button type="reset">Reset!</button>
+    </form>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="info">
+       <p><b>Contacts:</b> 0455 5555 555 / <b>Catering:</b> 0433 3333 333</p>
+       <p><b>Address:</b>123 Prize Lane, Kirwan, QLD</p>
+      </div>
+
+
+      <div id="nav-bottom">
+        <ul class="navbar-bottom">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="specials.html">Current Specials</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+  </body>
+</html>
